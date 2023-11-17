@@ -401,5 +401,11 @@ namespace JeopardyGame.Pages
             }
         }
 
+        private void bttStartGame_Click(object sender, RoutedEventArgs e)
+        {
+            GameBoard gameBoardPage = new GameBoard();
+            this.NavigationService.Navigate(gameBoardPage);
+            NavigationService.RemoveBackEntry();
+        }
     }    
 }

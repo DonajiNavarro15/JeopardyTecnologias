@@ -50,9 +50,10 @@ namespace JeopardyGame.Pages
         }
         private void CLicButtonEnterGame(object sender, RoutedEventArgs e)
         {
-            enterGameWithCode enterGameWithCode = new enterGameWithCode();
-            this.NavigationService.Navigate(enterGameWithCode);
-            NavigationService.RemoveBackEntry();
+            Views.EnterWithGameCode codeWindow = new Views.EnterWithGameCode();
+            codeWindow.Show();
+            enterGameWithCode codePage = new enterGameWithCode();
+            codeWindow.contentFrame.NavigationService.Navigate(codePage);
         }
         private void CLicButtonFriendsList(object sender, RoutedEventArgs e)
         {

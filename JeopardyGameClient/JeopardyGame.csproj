@@ -150,6 +150,9 @@
     <Compile Include="Pages\PrincipalPage.xaml.cs">
       <DependentUpon>PrincipalPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SendInvitationEmail.xaml.cs">
+      <DependentUpon>SendInvitationEmail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TeamChat.xaml.cs">
       <DependentUpon>TeamChat.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\ResourcesImage.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -191,6 +199,9 @@
     </Compile>
     <Compile Include="Views\PrincipalWindow.xaml.cs">
       <DependentUpon>PrincipalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SendEmail.xaml.cs">
+      <DependentUpon>SendEmail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserManagerWindow.xaml.cs">
       <DependentUpon>UserManagerWindow.xaml</DependentUpon>
@@ -262,6 +273,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\SendInvitationEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\TeamChat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -291,6 +306,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="StylesTempleate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SendEmail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -332,7 +351,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\ResourcesImage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -512,6 +531,9 @@
   <ItemGroup>
     <Resource Include="Images\informationIcon.png" />
     <Resource Include="Images\warningIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sendEmail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

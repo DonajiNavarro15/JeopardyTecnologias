@@ -580,5 +580,16 @@ namespace JeopardyGame.Pages
             this.NavigationService.Navigate(logInUserPage);
             NavigationService.RemoveBackEntry();
         }
+
+        private void ClickSendEmail(object sender, MouseButtonEventArgs e)
+        {
+            Views.SendEmail sendEmailView = new Views.SendEmail();
+            this.IsEnabled = false;
+            sendEmailView.Closed += (s, args) => { this.IsEnabled = true; };
+            sendEmailView.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            sendEmailView.Show();
+            SendInvitationEmail sendInvitationPage = new SendInvitationEmail();
+            sendEmailView.contentFrame.NavigationService.Navigate(sendInvitationPage);
+        }
     }
 }

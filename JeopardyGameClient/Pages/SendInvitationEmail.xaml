@@ -1,0 +1,42 @@
+﻿<Page x:Class="JeopardyGame.Pages.SendInvitationEmail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:p = "clr-namespace:JeopardyGame.Properties"
+      xmlns:local="clr-namespace:JeopardyGame.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="344" d:DesignWidth="600"
+      Title="SendInvitationEmail">
+
+    <Grid>
+        <Label x:Name="lblPasswordLogIn" Content = "{x:Static p:Resources.lblPasswordLogIn}" Style="{StaticResource labelStyleSimple}" 
+             Height="Auto" Width="Auto" FontSize="30" Margin="38,43,0,0"/>
+        <Border Background="Transparent" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="10" Width="524" HorizontalAlignment="Center" Margin="0,112,0,142" Padding="2" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <TextBox  x:Name="txbEmailInvitation" Style="{StaticResource TextFieldAddUser}" FontSize="15" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,-5,0,3" RenderTransformOrigin="0.5,0.5" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+        </Border>
+        <Button x:Name="bttSendEmail" Content = "{x:Static p:Resources.bttEnterGame}" BorderBrush="{x:Null}" Style="{StaticResource NoHoverStyle}" Foreground="White" FontWeight="Bold"
+        FontSize="25" Click="CLickButtonSendEmail" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Height="72" Width="229" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/purpleBtn.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

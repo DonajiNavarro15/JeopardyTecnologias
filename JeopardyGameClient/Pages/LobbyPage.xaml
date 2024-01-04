@@ -18,10 +18,10 @@
             <Image HorizontalAlignment="Left" Height="229" 
                Width="400" Margin="46,0,0,0" VerticalAlignment="Top" 
                Source="{StaticResource LogoJeopardyIcon}" RenderTransformOrigin="0.914,0.526"/>
-            <Label x:Name="lblCodeRoom" Content = "{x:Static p:Resources.lblCodeDescrip}" Style="{StaticResource labelStyleSimple}" Margin="0,39,0,0" Height="58" Width="auto" HorizontalAlignment="Center"/>
-            <Label x:Name="lblAleatoryCode" Content="Label" Style="{StaticResource labelStyleSimple}" Margin="792,39,0,0"/>
-            <Label x:Name="lblModalityGame" Content = "{x:Static p:Resources.lblModalityGame}" Style="{StaticResource labelStyleSimple}" Margin="94,218,0,0"/>
-            <CheckBox Content="{x:Static p:Resources.rdbTeam}" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Foreground="White" FontSize="30" x:Name="chbTeamUp" Margin="260,281,741,447" Width="auto" Checked="ClickTeamUp" Unchecked="ClickNoTeamUp">
+            <Label x:Name="lblCodeRoom" Content = "{x:Static p:Resources.lblCodeDescrip}" Style="{StaticResource labelStyleSimple}" Margin="528,39,0,0" Height="58" Width="auto"/>
+            <Label x:Name="lblAleatoryCode" Content="Label" Style="{StaticResource labelStyleSimple}" Margin="667,39,0,0"/>
+            <Label x:Name="lblModalityGame" FontSize="30" Content = "{x:Static p:Resources.lblModalityGame}" Style="{StaticResource labelStyleSimple}" Margin="94,264,0,0"/>
+            <CheckBox Content="{x:Static p:Resources.rdbTeam}" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Foreground="White" FontSize="30" x:Name="chbTeamUp" Margin="346,270,656,458" Width="auto" Checked="ClickTeamUp" Unchecked="ClickNoTeamUp">
                 <CheckBox.Style>
                     <Style TargetType="CheckBox">
                         <Setter Property="Background" Value="Gray" />
@@ -33,9 +33,9 @@
                     </Style>
                 </CheckBox.Style>
             </CheckBox>
-            <Grid Margin="94,376,91,80">
-                <Label x:Name="lblPlayersInGame" Content = "{x:Static p:Resources.lblPlayersInGame}" Style="{StaticResource labelStyleSimple}" Margin="0"/>
-                <GridSplitter HorizontalAlignment="Left" Height="266" Margin="530,29,0,0" Width="5"/>
+            <Grid Margin="92,346,93,110">
+                <Label x:Name="lblPlayersInGame" FontSize="30" Content = "{x:Static p:Resources.lblPlayersInGame}" Style="{StaticResource labelStyleSimple}" Margin="0"/>
+                <GridSplitter HorizontalAlignment="Left" Margin="530,37,0,85" Width="5"/>
 
                 <StackPanel x:Name="stcTeamBlue" Margin="0,58,590,0">
                     <Border x:Name="brdLeaderBlue" Margin="0,10,0,10"  Width="255" Height="40" CornerRadius="15" Background="#9926B1FF" BorderBrush="White" BorderThickness="1"  MouseDown="ClickChangeTeamSide">
@@ -90,13 +90,15 @@
                     </Border>
                 </StackPanel>
             </Grid>
-            <Button x:Name="bttStartGame" Content = "{x:Static p:Resources.bttStartGame}" Style="{StaticResource ButtonStartGame}" HorizontalAlignment="Left" Margin="766,692,0,0" VerticalAlignment="Top" Height="44" Width="151" RenderTransformOrigin="0.534,1.267" IsEnabled="False" Click="ClickStartGame"/>
-            <Button x:Name="bttCancelGame" Content = "{x:Static p:Resources.bttCancelGame}" Style="{StaticResource ButtonCancelGame}" HorizontalAlignment="Left" Margin="940,692,0,0" Click="CLicButtonCancelGame" VerticalAlignment="Top" Height="44" Width="149"/>
-            <Label x:Name="lblListOfFriends" Content = "{x:Static p:Resources.lblListOfFriends}" MouseDown="ClickListFriends" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="963,307,0,0" VerticalAlignment="Top"/>
-            <Image x:Name="imgActiveFriends" HorizontalAlignment="Left" Height="68" Margin="984,246,0,0" 
+            <Button x:Name="bttStartGame" Content = "{x:Static p:Resources.bttStartGame}" Style="{StaticResource ButtonStartGame}" HorizontalAlignment="Left" Margin="691,692,0,0" VerticalAlignment="Top" Height="44" Width="151" RenderTransformOrigin="0.534,1.267" IsEnabled="False" Click="ClickStartGame"/>
+            <Button x:Name="bttCancelGame" Content = "{x:Static p:Resources.bttCancelGame}" Style="{StaticResource ButtonCancelGame}" HorizontalAlignment="Left" Margin="881,692,0,0" Click="CLicButtonCancelGame" VerticalAlignment="Top" Height="44" Width="149"/>
+            <Label x:Name="lblListOfFriends" Content = "{x:Static p:Resources.lblListOfFriends}" MouseDown="ClickListFriends" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="955,348,0,0" VerticalAlignment="Top" Height="39" Width="104"/>
+            <Label x:Name="lblSendEmail" Content = "{x:Static p:Resources.lblSendEmail}" MouseDown="ClickSendEmail" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="922,102,0,0" VerticalAlignment="Top" Height="38" Width="160"/>
+            <Image x:Name="imgActiveFriends" HorizontalAlignment="Left" Height="54" Margin="977,287,0,0" 
                Width="61" 
                VerticalAlignment="Top" Source="{StaticResource ActiveFriendsIcon}" MouseDown="ClickListFriends" RenderTransformOrigin="4.252,2.317"/>
-            <Image HorizontalAlignment="Left" Height="101" Margin="978,349,0,317" Width="76" Source="{StaticResource ButtonChatIcon}" MouseDown="ClickOpenChat" RenderTransformOrigin="0.157,0.546"/>
+            <Image HorizontalAlignment="Left" Height="101" Margin="14,635,0,31" Width="76" Source="{StaticResource ButtonChatIcon}" MouseDown="ClickOpenChat" RenderTransformOrigin="0.157,0.546"/>
+            <Image HorizontalAlignment="Left" Margin="975,39,0,677" Width="58" Source="{StaticResource SendEmailIcon}" MouseDown="ClickSendEmail" RenderTransformOrigin="0.157,0.546"/>
             <Grid x:Name="grdActiveUser" Margin="597,0,4,0"  Visibility="Hidden">
                 <Frame x:Name="frmActiveFriendsAndChat" />
             </Grid>

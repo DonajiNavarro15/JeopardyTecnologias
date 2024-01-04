@@ -2183,6 +2183,12 @@ namespace JeopardyGame.ServidorServiciosJeopardy {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSenderManager/SentEmailInvitingToGame", ReplyAction="http://tempuri.org/IEmailSenderManager/SentEmailInvitingToGameResponse")]
         System.Threading.Tasks.Task<JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint> SentEmailInvitingToGameAsync(JeopardyGame.ServidorServiciosJeopardy.UserPOJO user, string subject, string bodyMessage);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSenderManager/SentEmailForInvitation", ReplyAction="http://tempuri.org/IEmailSenderManager/SentEmailForInvitationResponse")]
+        JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint SentEmailForInvitation(string email, string subject, string bodyMessage);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSenderManager/SentEmailForInvitation", ReplyAction="http://tempuri.org/IEmailSenderManager/SentEmailForInvitationResponse")]
+        System.Threading.Tasks.Task<JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint> SentEmailForInvitationAsync(string email, string subject, string bodyMessage);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -2226,6 +2232,14 @@ namespace JeopardyGame.ServidorServiciosJeopardy {
         
         public System.Threading.Tasks.Task<JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint> SentEmailInvitingToGameAsync(JeopardyGame.ServidorServiciosJeopardy.UserPOJO user, string subject, string bodyMessage) {
             return base.Channel.SentEmailInvitingToGameAsync(user, subject, bodyMessage);
+        }
+        
+        public JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint SentEmailForInvitation(string email, string subject, string bodyMessage) {
+            return base.Channel.SentEmailForInvitation(email, subject, bodyMessage);
+        }
+        
+        public System.Threading.Tasks.Task<JeopardyGame.ServidorServiciosJeopardy.GenericClassOfint> SentEmailForInvitationAsync(string email, string subject, string bodyMessage) {
+            return base.Channel.SentEmailForInvitationAsync(email, subject, bodyMessage);
         }
     }
     

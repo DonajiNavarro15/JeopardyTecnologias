@@ -50,7 +50,7 @@
                 </Border>
 
             </Border>
-            <Label x:Name="lblWinnerList" Content = "{x:Static p:Resources.lblWinnerList}" Foreground="White" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Margin="888,221,0,0" VerticalAlignment="Top" Width="272"/>
+            <Label x:Name="lblWinnerList" Content = "{x:Static p:Resources.lblWinnerList}" Foreground="White" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Margin="888,225,0,0" VerticalAlignment="Top" Width="272"/>
             <Image HorizontalAlignment="Left" Height="38" 
                 Width="31" Margin="852,229,0,0" VerticalAlignment="Top" 
                 Source="{StaticResource WinnerCrownIcon}" RenderTransformOrigin="-3.173,0.485"/>

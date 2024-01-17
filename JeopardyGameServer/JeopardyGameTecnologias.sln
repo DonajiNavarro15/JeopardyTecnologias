@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeopardyGame.Host", "JeopardyGame.Host\JeopardyGame.Host.csproj", "{2A5FC483-EEA4-4C3E-BE66-10036A24D3C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJeopardyServidor", "TestJeopardyServidor\TestJeopardyServidor.csproj", "{3F8E0390-9304-40C6-96E8-0802EED78D44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8539607C-763C-4884-8D2F-045A0B61638C} = {8539607C-763C-4884-8D2F-045A0B61638C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

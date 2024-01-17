@@ -18,7 +18,7 @@ namespace JeopardyGame.Host.Connection
         {
             try
             {                   
-                GetConectionString();
+               // GetConectionString();
                 UserManagerDataOperation.DeleteAllGuestUsers();
                 using (ServiceHost host = new ServiceHost(typeof(Service.ServiceImplementation.ServicesReferenceAuthor)))
                 {
@@ -30,45 +30,60 @@ namespace JeopardyGame.Host.Connection
             catch (SecurityNegotiationException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo SecurityNegotiationException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
             }
             catch (InvalidOperationException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo InvalidOperationException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
             }
             catch (AddressAlreadyInUseException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo AddressAlreadyInUseException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
             }
             catch (ProtocolException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo ProtocolException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
+
             }
             catch (CommunicationObjectFaultedException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo ProtocolException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
             }
             catch (CommunicationException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo CommunicationException:");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
             }
             catch (SystemException ex)
             {
                 ExceptionHandler.LogException(ex, CodesDictionary.ERROR);
+                Console.WriteLine("Se produjo una excepción de tipo SystemException");
+                Console.WriteLine(ex.ToString());
                 Console.WriteLine(Properties.StringResources.ServerFail);
                 Console.ReadLine();
-            }           
+            }
         }
 
         public static void GetConectionString()

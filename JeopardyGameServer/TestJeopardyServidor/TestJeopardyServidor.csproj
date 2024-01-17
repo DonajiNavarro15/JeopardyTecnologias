@@ -109,6 +109,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BdActions.resx</DependentUpon>
     </Compile>
+    <Compile Include="TestService\Test.cs" />
     <Compile Include="TestService\TestConsultFriendsFixture.cs" />
     <Compile Include="TestService\TestConsultGameInformationFixture.cs" />
     <Compile Include="TestService\TestDeleteFixture.cs" />
@@ -135,6 +136,10 @@
     <ProjectReference Include="..\JeopardyGame.Host\JeopardyGame.Host.csproj">
       <Project>{2a5fc483-eea4-4c3e-be66-10036a24d3c8}</Project>
       <Name>JeopardyGame.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JeopardyGame.Service\JeopardyGame.Service.csproj">
+      <Project>{8539607C-763C-4884-8D2F-045A0B61638C}</Project>
+      <Name>JeopardyGame.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

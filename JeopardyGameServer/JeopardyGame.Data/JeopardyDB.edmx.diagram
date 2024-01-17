@@ -4,36 +4,36 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2857f870b04e4956b3ca81a16585895f" Name="Diagram1">
-        <EntityTypeShape EntityType="JeopardyBD.AvatarPlayer" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Avatar" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Awnser" Width="1.5" PointX="10" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Baneo" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Category" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Friend" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.FriendsState" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.GamePlayer" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Game" Width="1.5" PointX="6" PointY="14" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Host" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Player" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.Question" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.State" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.sysdiagram" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="JeopardyBD.User" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
-        <AssociationConnector Association="JeopardyBD.FK_AvatarAvatarPlayer" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_PlayerAvatarPlayer" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_AwnserQuestion" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_CategoryAwnser" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_PlayerBaneo" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_CategoryQuestion" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_FriendState" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_PlayerFriends" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_PlayerFriends1" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_GameGamePlayer" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_PlayerGamePlayer" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_HostGame" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_StatePlayer" ManuallyRouted="false" />
-        <AssociationConnector Association="JeopardyBD.FK_UserPlayer" ManuallyRouted="false" />
+      <Diagram DiagramId="c5535c0bae0f45dca7025c09d646b341" Name="Diagram1">
+        <EntityTypeShape EntityType="JeopardyDB.AvatarPlayer" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Avatar" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Awnser" Width="1.5" PointX="10" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Baneo" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Category" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Friend" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.FriendsState" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.GamePlayer" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Game" Width="1.5" PointX="6" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Host" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Player" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.Question" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.State" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.sysdiagram" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JeopardyDB.User" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="JeopardyDB.FK_AvatarAvatarPlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_PlayerAvatarPlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_AwnserQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_CategoryAwnser" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_PlayerBaneo" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_CategoryQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_FriendState" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_PlayerFriends" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_PlayerFriends1" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_GameGamePlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_PlayerGamePlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_HostGame" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_StatePlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="JeopardyDB.FK_UserPlayer" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

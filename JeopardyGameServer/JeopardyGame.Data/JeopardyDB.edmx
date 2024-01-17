@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="JeopardyBD.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="JeopardyDB.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AvatarPlayers">
           <Key>
             <PropertyRef Name="IdAvatarPlayer" />
@@ -304,7 +304,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="JeopardyBDStoreContainer">
+        <EntityContainer Name="JeopardyDBStoreContainer">
           <EntitySet Name="AvatarPlayers" EntityType="Self.AvatarPlayers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Avatars" EntityType="Self.Avatars" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Awnsers" EntityType="Self.Awnsers" Schema="dbo" store:Type="Tables" />
@@ -381,7 +381,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="JeopardyBD" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="JeopardyDB" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="AvatarPlayer">
           <Key>
             <PropertyRef Name="IdAvatarPlayer" />
@@ -787,9 +787,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="JeopardyBDStoreContainer" CdmEntityContainer="JeopardyDBContainer">
+        <EntityContainerMapping StorageEntityContainer="JeopardyDBStoreContainer" CdmEntityContainer="JeopardyDBContainer">
           <EntitySetMapping Name="AvatarPlayers">
-            <EntityTypeMapping TypeName="JeopardyBD.AvatarPlayer">
+            <EntityTypeMapping TypeName="JeopardyDB.AvatarPlayer">
               <MappingFragment StoreEntitySet="AvatarPlayers">
                 <ScalarProperty Name="IdAvatarPlayer" ColumnName="IdAvatarPlayer" />
                 <ScalarProperty Name="Avatar_IdAvatar" ColumnName="Avatar_IdAvatar" />
@@ -798,7 +798,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Avatars">
-            <EntityTypeMapping TypeName="JeopardyBD.Avatar">
+            <EntityTypeMapping TypeName="JeopardyDB.Avatar">
               <MappingFragment StoreEntitySet="Avatars">
                 <ScalarProperty Name="IdAvatar" ColumnName="IdAvatar" />
                 <ScalarProperty Name="AvatarName" ColumnName="AvatarName" />
@@ -806,7 +806,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Awnsers">
-            <EntityTypeMapping TypeName="JeopardyBD.Awnser">
+            <EntityTypeMapping TypeName="JeopardyDB.Awnser">
               <MappingFragment StoreEntitySet="Awnsers">
                 <ScalarProperty Name="IdAwnser" ColumnName="IdAwnser" />
                 <ScalarProperty Name="SpanishAwnserDescription" ColumnName="SpanishAwnserDescription" />
@@ -816,7 +816,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Baneos">
-            <EntityTypeMapping TypeName="JeopardyBD.Baneo">
+            <EntityTypeMapping TypeName="JeopardyDB.Baneo">
               <MappingFragment StoreEntitySet="Baneos">
                 <ScalarProperty Name="IdBaneo" ColumnName="IdBaneo" />
                 <ScalarProperty Name="BanTimeBegin" ColumnName="BanTimeBegin" />
@@ -826,7 +826,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Categories">
-            <EntityTypeMapping TypeName="JeopardyBD.Category">
+            <EntityTypeMapping TypeName="JeopardyDB.Category">
               <MappingFragment StoreEntitySet="Categories">
                 <ScalarProperty Name="IdCategory" ColumnName="IdCategory" />
                 <ScalarProperty Name="SpanishCategoryDescription" ColumnName="SpanishCategoryDescription" />
@@ -835,7 +835,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Friends">
-            <EntityTypeMapping TypeName="JeopardyBD.Friend">
+            <EntityTypeMapping TypeName="JeopardyDB.Friend">
               <MappingFragment StoreEntitySet="Friends">
                 <ScalarProperty Name="IdFrineds" ColumnName="IdFrineds" />
                 <ScalarProperty Name="Player_IdPlayer" ColumnName="Player_IdPlayer" />
@@ -845,7 +845,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FriendsStates">
-            <EntityTypeMapping TypeName="JeopardyBD.FriendsState">
+            <EntityTypeMapping TypeName="JeopardyDB.FriendsState">
               <MappingFragment StoreEntitySet="FriendsStates">
                 <ScalarProperty Name="IdFriendState" ColumnName="IdFriendState" />
                 <ScalarProperty Name="StateDescription" ColumnName="StateDescription" />
@@ -853,7 +853,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="GamePlayers">
-            <EntityTypeMapping TypeName="JeopardyBD.GamePlayer">
+            <EntityTypeMapping TypeName="JeopardyDB.GamePlayer">
               <MappingFragment StoreEntitySet="GamePlayers">
                 <ScalarProperty Name="IdGamePlayer" ColumnName="IdGamePlayer" />
                 <ScalarProperty Name="PointsInGame" ColumnName="PointsInGame" />
@@ -864,7 +864,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Games">
-            <EntityTypeMapping TypeName="JeopardyBD.Game">
+            <EntityTypeMapping TypeName="JeopardyDB.Game">
               <MappingFragment StoreEntitySet="Games">
                 <ScalarProperty Name="RoomCode" ColumnName="RoomCode" />
                 <ScalarProperty Name="Host_IdHost" ColumnName="Host_IdHost" />
@@ -872,7 +872,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Hosts">
-            <EntityTypeMapping TypeName="JeopardyBD.Host">
+            <EntityTypeMapping TypeName="JeopardyDB.Host">
               <MappingFragment StoreEntitySet="Hosts">
                 <ScalarProperty Name="IdHost" ColumnName="IdHost" />
                 <ScalarProperty Name="HostName" ColumnName="HostName" />
@@ -880,7 +880,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Players">
-            <EntityTypeMapping TypeName="JeopardyBD.Player">
+            <EntityTypeMapping TypeName="JeopardyDB.Player">
               <MappingFragment StoreEntitySet="Players">
                 <ScalarProperty Name="IdPlayer" ColumnName="IdPlayer" />
                 <ScalarProperty Name="GeneralPoints" ColumnName="GeneralPoints" />
@@ -892,7 +892,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Questions">
-            <EntityTypeMapping TypeName="JeopardyBD.Question">
+            <EntityTypeMapping TypeName="JeopardyDB.Question">
               <MappingFragment StoreEntitySet="Questions">
                 <ScalarProperty Name="IdQuestion" ColumnName="IdQuestion" />
                 <ScalarProperty Name="SpanishQuestionDescription" ColumnName="SpanishQuestionDescription" />
@@ -905,7 +905,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="States">
-            <EntityTypeMapping TypeName="JeopardyBD.State">
+            <EntityTypeMapping TypeName="JeopardyDB.State">
               <MappingFragment StoreEntitySet="States">
                 <ScalarProperty Name="IdState" ColumnName="IdState" />
                 <ScalarProperty Name="StateDescription" ColumnName="StateDescription" />
@@ -913,7 +913,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="JeopardyBD.sysdiagram">
+            <EntityTypeMapping TypeName="JeopardyDB.sysdiagram">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -924,7 +924,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="JeopardyBD.User">
+            <EntityTypeMapping TypeName="JeopardyDB.User">
               <MappingFragment StoreEntitySet="Users">
                 <ScalarProperty Name="IdUser" ColumnName="IdUser" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
@@ -951,7 +951,7 @@
         <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
